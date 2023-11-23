@@ -1,0 +1,15 @@
+1- navbarı oluştur 
+2- navbara logo ekle ve size nı ayarla
+3- butonları ekle 
+4-search kutusu
+5-card  yapıları
+6- card resmi ve yazıları
+ ₺
+
+
+
+
+
+                <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">

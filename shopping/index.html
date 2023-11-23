@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping💵</title>
+    <link rel="stylesheet" href="shopping.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-warning">
+
+    <header class="container">
+        <!-- navbar -->
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="Clarusway_Logo.png" alt="" width="6%"> Clarusway</a>
+
+                <!-- SEPET DIŞI -->
+                <!-- <div class="sepet-cart position-relative">
+                    <button type="button" class="btn1-sepet btn btn-warning position-relative"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <i class="bi bi-bag "></i>
+                        <span id="btn1-sayı"
+                            class=" position-absolute top-0 end-100  badge rounde-pill bg-danger">1</span>
+                    </button>
+                </div> -->
+
+                <!-- SEPET İÇİ -->
+               <div class="shopping-cart position-relative">
+                <button type="button" class="btn-cart btn btn-warning position-relative">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="item-count" class="position-absitemcountolute top-0 end-50 translate-middle rounded-circle mt-1
+                   p-1 text-bg-light ">1</span>
+                </button>
+                <div class="shopping-cart-list">
+                    <b class="fs-5 text-white my-3">Shopping Cart</b>
+                    <!-- <div class="list-item">
+                        <div class="row align-items-center text-white-50">
+                            <div class="col-md-3">
+                                <img src="./img/nike.jpg" alt=""   height="90vh" class="spet-img">
+                            </div>
+                            <div class="col-md-5">
+                                <div class="title p-3">Ayakkabı</div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="price ">450tl
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+
+                                <button class="btn btn-delete btn-warning">
+                                    <i class="fas fa-trash-alt text-dark"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+               </div>
+            </div>
+        </nav>
+    </header>
+
+        <!-- MALZEME SEÇİMİ -->
+        <div class="btn-container">
+            <button type="button" class="btn-erkek btn btn-primary">Erkek</button>
+            <button type="button" class="btn-kadın btn btn-secondary">Kadın</button>
+            <button type="button" class="btn-elektronik btn btn-success">Bilgisayar</button>
+            <button type="button" class="btn-elektronik btn btn-danger">Telefon</button>
+            <button type="button" class="btn-yiyecek btn bg-white">Yiyecek</button>
+            <button type="button" class="btn-ayakkabı btn  btn-dark">Ayakkabı & Terlik</button>
+        </div>
+
+        <div class="search">
+            <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder=" Sen istediğini yaz biz bulalım"
+                    arialabel="Search">
+            </form>
+        </div>
+
+        
+
+            <div  class="row row-cols-1 row-cols-md-3 g-4 bg-dark">
+
+
+                <div id="" class="col-2 h-100">
+                    <div  class="card ">
+                        <img src="./img/erkekp1.jpg" class="card-img-top" height="300vh">
+                        <div class="card-body">
+                            <h5 class="card-title">Kot Pantolon</h5>
+                            <p class="card-text">Kot Pantolon Pantolon Bol Düz Kot Uzun Trend Pantolon Büyük Beden Erkek
+                                Kot
+                                Büyük Beden 28-48 Bol Kot Pantolon</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">400 ₺</span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2 h-100">
+                    <div class="card ">
+                        <img src="./img/erkek2.jpg" class="card-img-top" height="300vh">
+                        <div class="card-body">
+                            <h5 class="card-title">Erkek Paraşüt Pantolon</h5>
+                            <p class="card-text">Erkekler Düz Renk Cepler Bel İpli Ayak Bileği Bağlı Sıska Kargo <br>
+                                ürün kodu:7829070950595
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">600 ₺ </span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2 h-100">
+                    <div class="card ">
+                        <img src="./img/kadn1.jpg" class="card-img-top" height="300vh">
+                        <div class="card-body">
+                            <h5 class="card-title">Kadın Keten Pantolon</h5>
+                            <p class="card-text">BELİ LASTİKLİ KETEN LACİVERT KADIN PANTOLON
+                                ÜRÜN KODU: 23KW055030036-038
+
+                                <br>ÜRÜN NO: 3940
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">434 ₺</span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 h-100 ">
+                    <div class="card ">
+                        <img src="./img/erkek3.jpg" class="card-img-top" height="350vh">
+                        <div class="card-body">
+                            <h5 class="card-title">Erkek Triko</h5>
+                            <p class="card-text">Madmext Antrasit Basic Triko Erkek Kazak 5990 T5990</p>
+                        </div>
+                        <div class="card-footer ">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">330 ₺ </span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25 h-100">
+                    <div class="card ">
+                        <img src="./img/pc1.jpg" class="card-img-top" height="300vh">
+                        <div class="card-body">
+                            <h5 class="card-title">MSI</h5>
+                            <p class="card-text">MSI NB RAIDER GE78HX 13VI-036TR I9-13980HX 64GB DDR5 RTX4090 GDDR6 16GB
+                                4TB
+                                SSD 17 QHD 240Hz W11</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">279.000,00 ₺</span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 h-100">
+                    <div class="card ">
+                        <img src="./img/pc2.jpg" class="card-img-top" height="300vh">
+                        <div class="card-body">
+                            <h5 class="card-title">MacBook Air</h5>
+                            <p class="card-text">MacBook Air MGN63TU/A M1 8Gb-256Gb Ssd-Retina-13.3inc-Space Grey
+                                8 çekirdekli CPU’ya, 7 çekirdekli GPU’ya sahip</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">26.999 ₺</span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 h-100">
+                    <div class="card ">
+                        <img src="./img/iphone1.jpg" class="card-img-top" height="350vh">
+                        <div class="card-body">
+                            <h5 class="card-title">İPHONE 14 PRO</h5>
+                            <p class="card-text">Apple iPhone 14 Pro Max 256 GB Uzay Siyahı (İthalatçı Garantili)
+                                TYC00742672676</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                ₺
+                                <span class="ücret ">64.398,94 ₺ </span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col h-100">
+                    <div class="card ">
+                        <img src="./img/nokiapro.jpg" class="card-img-top" height="350vh">
+                        <div class="card-body">
+                            <h5 class="card-title">İPHONE 16 PRO MAX</h5>
+                            <p class="card-text"> clarusway Shopping'le her şey mümkün iste iPhone 16 Pro Max Nokia 3310
+                                sizlerle</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">59.999 ₺ </span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col h-100">
+                    <div class="card ">
+                        <img src="./img/filiz.jpg" class="card-img-top" height="350vh">
+                        <div class="card-body">
+                            <h5 class="card-title">Filiz Kalem Makarna</h5>
+                            <p class="card-text">Öğrencinin 1 numaralı makarnası filiz makarna ucuzluk ve lezzetiyle
+                                öğrenci
+                                dostu Filiz makarna. </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">16₺</span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle  btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col h-100">
+                    <div class="card ">
+                        <img src="./img/toto.jpg" class="card-img-top" height="350vh">
+                        <div class="card-body">
+                            <h5 class="card-title">ToTo</h5>
+                            <p class="card-text">Dışım tatlı içim sürprizlerle doludur sizde bana sahip olmak ister
+                                misiniz
+                                ve sadece ↓ </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">19.99 ₺</span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col h-100">
+                    <div class="card ">
+                        <img src="./img/ıslak.jpg" class="card-img-top" height="375vh">
+                        <div class="card-body">
+                            <h5 class="card-title">Islak Tuvalet Terliği</h5>
+                            <p class="card-text">
+                                Banyo Tuvalet Kaymaz Terlikler </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">89.90tl </span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col h-100">
+                    <div class="card ">
+                        <img src="./img/nike.jpg" class="card-img-top" height="323vh">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Force</h5>
+                            <p class="card-text">Sağlam dikişlerden kusursuz deriye ve çanak taban tasarımına kadar bu
+                                ayakkabı, pota camından daha pürüzsüz olan dayanıklı bir stil sunar.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex gap-5 ">
+                                <span class="fiyat  fw-bold">Fiyat:</span>
+                                <span class="ücret ">89.90tl </span>
+
+
+                            </small>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary d-flex justify-content-center gap-5">
+                                <button class="ekle btn btn-danger ">Sepete ekle </button>
+                                <button class="btn btn-primary">incele</button>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        
+    
+
+    <script src="shopping.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
